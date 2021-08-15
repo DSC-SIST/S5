@@ -28,7 +28,7 @@ const Intro = () => {
               </div>
               <br></br>
               <a
-                href="" // To be filled
+                href="https://forms.gle/ijEEz6qtfR8C2McFA/" // To be filled
                 target="_blank"
                 rel="noopener noreferrer"
               >
