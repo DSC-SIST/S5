@@ -1,0 +1,906 @@
+/* ************************************************************
+:: Template Name: Appo - App Landing Page
+:: Template URI: http://theme-land.com/appo/
+:: Template Author Name: theme_land
+:: Template Author URI: support@theme-land.com
+:: Version: 1.0.0
+:: Created: 02 September 2019
+************************************************************ 
+*
+*
+******* :: INDEX OF RESPONSIVE CSS :: *******
+:: 1.0 COMMON CSS
+:: 2.0 HEADER AREA CSS
+:: 3.0 WELCOME AREA CSS
+:: 4.0 BENIFITS AREA CSS
+:: 5.0 ABOUT AREA CSS
+:: 6.0 WORK AREA CSS
+:: 7.0 FEATURES AREA CSS
+:: 8.0 PRICE PLAN AREA CSS
+:: 9.0 TESTIMONIAL AREA CSS
+:: 10.0 START AREA CSS
+:: 11.0 DOWNLOAD AREA CSS
+:: 12.0 BLOG PAGE DETAILS AREA CSS
+:: 13.0 FAQ AREA CSS
+:: 14.0 FOOTER AREA CSS
+:: 15.0 HOMEPAGE- TOKYO AREA CSS
+:: 16.0 HOMEPAGE- PARIS AREA CSS
+:: 17.0 HOMEPAGE- SEOUL AREA CSS
+:: 18.0 HOMEPAGE- MOSCOW AREA CSS
+:: 19.0 HOMEPAGE- ITALY AREA CSS
+:: 20.0 ABOUT US AREA CSS
+:: 21.0 FAQ AREA CSS
+:: 22.0 LOGIN AREA CSS
+:: 23.0 FORGOT AREA CSS
+:: 24.0 MAINTENENCE AREA CSS
+:: 25.0 COMING SOON AREA CSS
+:: 26.0 PREVIEW AREA CSS
+****************************** */
+
+/* ******************************
+:: 1.0 COMMON CSS
+****************************** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150 {
+        padding: 100px 0;
+    }
+
+    .ptb_100 {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .res-margin {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .inner-wrapper h1,
+    .inner-wrapper h2 {
+        font-size: 30px;
+    }
+
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150,
+    .ptb_100 {
+        padding: 50px 0;
+    }
+
+    .res-margin {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .inner-wrapper h1,
+    .inner-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .avatar-lg {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .container-fluid {
+        padding: 0 3%;
+    }
+
+    .ptb_180 {
+        padding: 80px 0;
+    }
+
+    .ptb_150,
+    .ptb_100 {
+        padding: 30px 0;
+    }
+}
+
+/*SECTION HEADING*/
+@media (max-width: 991px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2em;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    .headings > h2,
+    .section-heading > h2 {
+        line-height: 1.5;
+    }
+}
+
+/*BUTTONS*/
+@media (max-width: 575px) {
+    .button-group a {
+        margin-top: 0;
+        margin-right: 5px;
+    }
+
+    .button-group .btn {
+        padding: 12px 20px
+    }
+
+    .store-buttons i {
+        font-size: 22px;
+        padding-right: 8px;
+    }
+
+    .store-buttons a p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .store-buttons span {
+        font-size: 15px;
+    }
+
+    .forgot-area .input-group .btn.btn-primary,
+    .newsletter-area .input-group .btn.btn-primary {
+        border-radius: 5px !important;
+    }
+}
+
+/*SHAPES*/
+@media (max-width: 991px) {
+    .shape-2 {
+        left: 16%;
+    }
+
+    .shape-3 {
+        left: 18%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-shape {
+        width: 580px;
+        top: -10%;
+        left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .bg-shape {
+        width: 320px;
+        height: 550px;
+    }
+
+    .shape-1::before {
+        height: 25rem;
+        width: 75rem;
+    }
+}
+
+/*TYPED*/
+@media (max-width: 767px) {
+    .cd-headline {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cd-headline {
+        font-size: 20px;
+    }
+}
+
+/* ******************************
+:: 2.0 HEADER AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .mega-menu {
+        width: 590px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .nav-white .header-items .nav-link,
+    .nav-white .header-items .nav-item:hover .nav-link,
+    .nav-white .header-items .nav-item:focus .nav-link,
+    .nav-white .header-items .nav-item.active .nav-link {
+        color: #fff;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropdown-item {
+        padding: 0.5rem 0;
+    }
+
+    .dropdown:hover .mega-menu {
+        display: none;
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .dropdown-menu.show {
+        display: block !important;
+    }
+
+    .dropdown-toggle::after {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 100%;
+    }
+
+    .mega-menu {
+        width: 100%;
+        left: auto;
+        -webkit-transform: inherit;
+        transform: inherit;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .mega-menu .single-menu {
+        margin-bottom: 1rem;
+    }
+
+    .mega-menu .col-12:last-child .single-menu {
+        margin-bottom: 0;
+    }
+
+    #appo-menu {
+        background-color: #f5f7fb;
+        -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+        padding: 30px;
+        border-radius: 0 0 6px 6px;
+        max-height: 450px;
+        overflow: scroll;
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+}
+
+/* ******************************
+:: 3.0 WELCOME AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .welcome-area {
+        height: 700px;
+    }
+
+    .welcome-intro > h3 {
+        font-size: 28px;
+    }
+
+    .miami .welcome-thumb {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-area {
+        height: 100%;
+        padding-top: 90px;
+    }
+
+    .welcome-intro {
+        margin-top: 30px;
+    }
+
+    .welcome-intro > h3 {
+        font-size: 26px;
+    }
+
+    .welcome-thumb {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .welcome-intro {
+        margin-top: 0;
+    }
+
+    .welcome-intro > h3 {
+        font-size: 22px;
+    }
+
+    .miami .welcome-thumb {
+        max-width: 250px;
+        margin: 0 auto !important;
+    }
+}
+
+/* ******************************
+:: 4.0 BENIFITS AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .benifits-item {
+        text-align: center;
+    }
+}
+
+/* ******************************
+:: 5.0 ABOUT AREA CSS
+****************************** */
+@media (max-width: 575px) {
+    .about-text p {
+        line-height: 26px;
+    }
+}
+
+/* ******************************
+:: 6.0 WORK AREA CSS
+****************************** */
+@media (min-width: 992px) {
+    .work-content .col-12:nth-child(2n+1) .single-work {
+        margin-right: 180px;
+    }
+
+    .work-content .col-12:nth-child(2n) .single-work {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 991px) {
+    .work-wrapper {
+        position: inherit;
+        -webkit-transform: inherit;
+        transform: inherit;
+        top: auto;
+        left: auto;
+    }
+
+    .single-work {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .single-work {
+        margin-top: 20px;
+    }
+
+    .work-content .col-sm-6:first-child .single-work {
+        margin-top: 0;
+    }
+}
+
+/* ******************************
+:: 7.0 FEATURES AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .counter-list ul li {
+        width: 49%;
+    }
+
+    .counter-text > span {
+        font-size: 26px;
+    }
+
+    .counter-text h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .featured-items {
+        margin-top: 4rem;
+    }
+
+    .featured-items ul {
+        -webkit-perspective: inherit;
+        perspective: inherit;
+    }
+
+    .featured-items ul li,
+    .moscow .featured-items ul li {
+        position: inherit;
+        mix-blend-mode: inherit;
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+
+    .features-text > h3 {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .featured-items {
+        margin-top: 3rem;
+    }
+
+    .featured-items ul li:hover {
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+
+    .features-text > p {
+        line-height: 26px;
+    }
+}
+
+/* ******************************
+:: 8.0 PRICE PLAN AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .single-price-plan {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .price-plan-wrapper .single-price-plan {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .price-plan-wrapper .plan-select,
+    .price-plan-wrapper .featured .plan-select {
+        padding: 20px;
+    }
+
+    .price-plan-wrapper .featured {
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .price-plan-wrapper .featured .price-header {
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .price-plan-wrapper .single-price-plan {
+        width: 100%;
+    }
+
+    .single-price-plan:first-of-type {
+        margin-top: 0;
+    }
+}
+
+/* ******************************
+:: 9.0 TESTIMONIAL AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .testimonial-area .owl-dots {
+        bottom: -15px;
+    }
+}
+
+/* ******************************
+:: 10.0 START FREE AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .start-free-content {
+        text-align: center;
+        padding: 4rem;
+    }
+
+    .start-free-text > h2 {
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width: 767px) {
+    .start-free-content {
+        padding: 3rem;
+    }
+
+    .start-free-text > h2 {
+        font-size: 2em;
+    }
+
+    .start-free-btn .btn {
+        font-size: 15px;
+        padding: 13px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .start-free-text > h2 {
+        font-size: 1.6em;
+    }
+
+    .start-free-text span {
+        font-size: 14px;
+    }
+}
+
+/* ******************************
+:: 11.0 DOWNLOAD AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .download-text > h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 575px) {
+    .download-text > h2 {
+        font-size: 2em;
+    }
+
+    .button-group a:nth-child(2) {
+        margin-right: 0;
+    }
+}
+
+/* ******************************
+:: 12.0 BREADCRUMB AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .breadcrumb-content > h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .breadcrumb-area {
+        height: 300px;
+    }
+
+    .breadcrumb-content > h3 {
+        font-size: 24px;
+    }
+}
+
+/* ******************************
+:: 13.0 BLOG PAGE DETAILS AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .sidebar .single-widget:last-child {
+        margin-bottom: 35px;
+    }
+
+    .blog-right .sidebar .single-widget:first-child {
+        margin-top: 35px;
+    }
+
+    .blog-right .sidebar .single-widget:last-child {
+        margin-bottom: 0;
+    }
+
+    .post-content h6 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .post-content h6 {
+        font-size: 16px;
+    }
+
+    .appo-blog .blog-details .blog-title > a {
+        font-size: 22px;
+    }
+
+    .admin-name {
+        font-size: 18px;
+    }
+
+    .comments,
+    .blog-contact {
+        margin-left: 100px;
+    }
+
+    .comments-content a:last-child {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .appo-blog .blog-details .blog-title > a {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .meta-info {
+        font-size: 13px;
+    }
+
+    .comments,
+    .blog-contact {
+        margin-left: 0;
+    }
+}
+
+/* ******************************
+:: 14.0 FOOTER AREA CSS
+****************************** */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+
+    .footer-area .col-12:last-of-type .footer-items {
+        margin-bottom: 0;
+    }
+}
+
+/* ******************************
+:: 15.0 HOMEPAGE- TOKYO AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .tokyo .welcome-intro > h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 575px) {
+    .tokyo .welcome-intro > h1 {
+        font-size: 2em;
+    }
+}
+
+/* ******************************
+:: 16.0 HOMEPAGE- PARIS AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .paris .welcome-area {
+        height: 550px;
+    }
+}
+
+/* ******************************
+:: 17.0 HOMEPAGE- SEOUL AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .seoul .welcome-intro {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .seoul .seoul-thumb > img {
+        max-width: 250px;
+    }
+}
+
+/* ******************************
+:: 18.0 HOMEPAGE- MOSCOW AREA CSS
+****************************** */
+@media (min-width: 992px) {
+    .moscow .work-content .col-12:nth-child(2n+1) .single-work {
+        margin-left: 180px;
+        margin-right: 0;
+    }
+
+    .moscow .work-content .col-12:nth-child(2n) .single-work {
+        margin-right: 180px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .moscow .welcome-intro > h1,
+    .moscow .welcome-intro p {
+        color: #fff;
+    }
+
+    .moscow .welcome-area .bg-shape {
+        -webkit-transform: translate(-20%, -40%) rotate(-45deg);
+        transform: translate(-20%, -40%) rotate(-45deg);
+        height: 100%;
+        width: 1200px;
+    }
+}
+
+/* ******************************
+:: 19.0 HOMEPAGE- ITALY AREA CSS
+****************************** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .waves {
+        height: 70px;
+        min-height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .italy .welcome-area,
+    .preview .welcome-area {
+        height: 550px;
+    }
+}
+
+@media (max-width: 575px) {
+    .italy .welcome-area,
+    .preview .welcome-area {
+        height: 500px;
+    }
+
+    .italy .badge-light,
+    .preview .badge-light {
+        font-size: 14px;
+        padding-left: .4em;
+        padding-right: .4em;
+    }
+
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+/* ******************************
+:: 20.0 ABOUT US AREA CSS
+****************************** */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .about-us .counter-list ul li {
+        width: 24%;
+    }
+}
+
+/* ******************************
+:: 21.0 FAQ AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .single-faq {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .single-faq {
+        margin-bottom: 20px;
+    }
+}
+
+/* ******************************
+:: 22.0 LOGIN AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .login-area {
+        background-position: top right;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 575px) {
+    .appo-modal .modal-header .nav-link {
+        font-size: 14px;
+        padding: 1rem 1.5rem;
+    }
+
+    .social-login > h5 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .login-form input {
+        font-size: 13px;
+    }
+
+    .login-form .custom-control {
+        font-size: 13px;
+    }
+}
+
+/* ******************************
+:: 23.0 FORGOT AREA CSS
+****************************** */
+@media (max-width: 575px) {
+
+    .reset-password .form-control,
+    .reset-password .input-group-append,
+    .reset-password button {
+        width: 100%;
+    }
+}
+
+/* ******************************
+:: 24.0 MAINTENENCE AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .maintenance-content > h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .maintenance-content > h3 {
+        font-size: 32px;
+    }
+
+    .maintenance-thumb {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .maintenance-content > h3 {
+        font-size: 28px;
+    }
+
+    .maintenance-thumb {
+        max-width: 100%;
+    }
+}
+
+/* ******************************
+:: 25.0 COMING SOON AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .countdown-container .countdown-value {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .countdown-container .countdown-heading {
+        font-size: 14px !important;
+        margin: 5px;
+    }
+}
+
+/* ******************************
+:: 26.0 PREVIEW AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .preview-area .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .preview-area .single-preview {
+        margin-top: 20px;
+    }
+}
